@@ -15,6 +15,24 @@ namespace my_first
             string name = Console.ReadLine();
             Console.WriteLine("你好：" + name);
             Console.WriteLine("试一下占位符：{0}", "%");
+            Console.WriteLine("====================");
+            //整数
+            int p = 3;
+            //浮点数/小数
+            double s = 3.14;
+            //字符串类型
+            string str = "超人视觉";
+            // 字节
+            char c = 'a';
+            //隐式转换
+            double D = p;
+            //显示转换（强制类型转换）
+            int S = (int)D;
+            int SW = (int)3.14;
+            //输出内容
+            Console.WriteLine(str);
+            Console.WriteLine(D);
+            Console.WriteLine(SW);
             Console.ReadLine();
         }
     }
