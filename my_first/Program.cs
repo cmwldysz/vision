@@ -10,7 +10,12 @@ namespace my_first
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("123");
+            //我的第一个程序
+            Console.WriteLine("请输入你的名称：");
+            string name = Console.ReadLine();
+            Console.WriteLine("你好：" + name);
+            Console.WriteLine("试一下占位符：{0}", "%");
+            Console.ReadLine();
         }
     }
 }
