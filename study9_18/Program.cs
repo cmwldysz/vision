@@ -224,7 +224,6 @@ namespace study9_18
                 Console.WriteLine("数据库已关闭");
             }
             Console.WriteLine("====================数据库的查询========================");
-
             SqlDataReader objDataRead = SQLHelper.GetReader("select * from information");
             //循环
             while (objDataRead.Read())
