@@ -49,7 +49,7 @@ namespace study9_21
         }
     }
     class TEST {
-        public static string aaa = "123";
+        public static string aaa = "1244443";
     }
     class Program
     {
