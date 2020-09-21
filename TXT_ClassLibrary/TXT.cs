@@ -9,7 +9,7 @@ namespace TXT_ClassLibrary
 {
     public class TXT
     {
-        public static string logPath = "";
+        private static string logPath = "";
         static TXT() {
             string temp = DateTime.Now.ToString(string.Format("{0}{1}{2}{3}{4}{5}", 
                 DateTime.Now.Year, DateTime.Now.Month, 

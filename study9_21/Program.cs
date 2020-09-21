@@ -43,10 +43,13 @@ namespace study9_21
         public student(string name, int age, string id) :base(name,age){
             this.studentId = id;
         }
-        public new void print() {
+        public void print() {
             base.pring();
             Console.WriteLine("studentid={0}", this.studentId);
         }
+    }
+    class TEST {
+        public static string aaa = "123";
     }
     class Program
     {
@@ -66,7 +69,6 @@ namespace study9_21
             Console.WriteLine(information);
             //向txt中写入信息
             TXT.write_txt(txtPath, information);
-
             //向数据库发起请求
             SqlDataReader objReader = SQLHelper.SQLHelper.GetReader(sql);
 
@@ -121,7 +123,8 @@ namespace study9_21
             //INI.WritePrivateProfileString("数据库配置信息", "账号", "sa", Save_File);
             //INI.WritePrivateProfileString("数据库配置信息", "密码", "123456", Save_File);
 
-
+            TEST.aaa = "wqewqewqe";
+            Console.WriteLine("试一下静态变量是否可赋值：{0}",TEST.aaa);
             Console.WriteLine("==========base关键字==============");
             student objstudent = new student("李四", 18, "2020921");
             objstudent.print();
