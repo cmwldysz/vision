@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace study9_22
 {
-    #region
+    #region 接口
     public interface IBankAccount //银行账号
     {
         void PayIn(decimal amount);//存款
