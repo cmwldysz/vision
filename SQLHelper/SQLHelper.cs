@@ -10,8 +10,10 @@ namespace SQLHelper
 {
     public class SQLHelper
     {
-       
-        public readonly static string conString = GetSQLString();
+
+        //通过读取配置文件读取配置文件
+        //public readonly static string conString = GetSQLString();
+        public readonly static string conString = "Server=LAPTOP-NA9O9SEF;DataBase=Student_Information;Uid=sa;pwd=123456";
         public static string GetSQLString() {
             string Save_File = AppDomain.CurrentDomain.BaseDirectory + "数据库配置.ini";
 
