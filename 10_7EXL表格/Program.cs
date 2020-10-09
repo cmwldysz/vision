@@ -16,7 +16,7 @@ namespace _10_7EXL表格
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Form3());
         }
     }
 }
