@@ -25,6 +25,7 @@ namespace study10_14线程1
                 ThreadPool.QueueUserWorkItem(DoWork, "线程" + i);
             }
             Console.ReadKey();
+           
         }
     }
 }
