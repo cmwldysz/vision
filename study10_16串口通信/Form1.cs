@@ -53,6 +53,8 @@ namespace study10_16串口通信
                     sp.DataBits = int.Parse(this.cmbDataBits.Text);
                     //设置停止位
                     sp.StopBits = (StopBits)int.Parse(this.cmbStopBit.Text);
+                    //校验位   字符串转枚举
+                    //sp.Parity = (Parity)Enum.Parse(typeof(Parity), this.cmbParity.Text);
                     //打开端口
                     sp.Open();
                     //绑定事件-接收返回消息
@@ -84,7 +86,7 @@ namespace study10_16串口通信
             //直接转换成字符串的形式
             string strRecieve = Encoding.Default.GetString(RecieveBuf);
             //判断是字符串还是16进制显示
-            if (this.radioButton1.Checked == true)//字符串显示
+            if (this.radioButton1.Checked == true)//16进制显示
             {
                 //跨线程访问空间显示结果
                 this.Invoke(new MethodInvoker(delegate () {
